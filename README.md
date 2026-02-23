@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ASK Investment | Real Estate Intelligence Dashboard
 
-## Getting Started
+**ASK (Analysis, Strategy, & Knowledge)** is a high-performance, interactive financial simulation tool designed for modern real estate investors. It transforms static property data into a dynamic 20-year growth forecast.
 
-First, run the development server:
+## 🚀 Core Features
+* **Investment Time Machine:** An automated playback engine that simulates 20 years of compound growth in real-time.
+* **Macro-Economic Toggles:** Instantly switch between **Bear, Stable, and Bull** market conditions to see how volatility affects portfolio value.
+* **Net Profit Logic:** Built-in mortgage and interest rate calculators that factor in 80% LTV (Loan to Value) debt costs to show true "take-home" liquidity.
+* **Strategic Comparison Engine:** A dark-mode drawer for side-by-side analysis of high-yield assets.
+* **Responsive UI:** Mobile-optimized experience with horizontal category scrolling and touch-friendly simulation controls.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Tech Stack
+* **Framework:** Next.js 16 (App Router)
+* **Styling:** Tailwind CSS (Mobile-first responsive design)
+* **Icons:** Lucide React
+* **UI Components:** Shadcn/UI (Card, Badge, Input)
+* **State Management:** React Hooks (`useState`, `useEffect`)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 💡 How it works
+The app uses the compound interest formula:
+$$V = P(1 + r \cdot m)^t$$
+Where:
+* $V$ is the Future Value
+* $P$ is the Purchase Price
+* $r$ is the ROI
+* $m$ is the Market Mood Multiplier
+* $t$ is the Time in years
